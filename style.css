@@ -44,3 +44,32 @@ body.dark-mode{
 .slider:hover{
     box-shadow: 0 0 20px rgb(214, 252, 0);
 }
+
+/* svgイメージ追加 */
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 36px;
+    width: 36px;
+    left: 4px;
+    bottom: 4px;
+    background-image: url();
+    transition: 0.4s;
+    background-size: cover;
+}
+
+input:checked + .slider{
+    background-color: #2c0b47;
+}
+
+
+input:checked + .slider:hover{
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+/* svgイメージ追加 */
+input:checked + .slider::before{
+    transform: translateX(36px);
+    background-image: url();
+    background-size: cover;
+}
