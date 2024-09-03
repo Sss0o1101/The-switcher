@@ -6,3 +6,18 @@ body.dark-mode{
     background-color: black;
     color: white;
 }
+
+.the-switch-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+}
+
+.the-switch{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 44px;
+}
+
